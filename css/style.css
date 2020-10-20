@@ -1,0 +1,92 @@
+body {
+	/*height: 100%;*/
+	margin: 0;
+    overflow:hidden;
+    color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a, a:link, a:visited, a:active {
+  color: white;
+  border-bottom: 1px dotted rgba(255, 255, 255, .5);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+a.image-link {
+	border-bottom: none;
+}
+
+#chart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%
+  left: 0%;
+}
+canvas {
+  position: absolute;
+  top: 0%;
+  left: 0%;	
+}
+
+#title {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%,-50%);
+	font-family: 'Amatic SC', cursive;
+	font-size: 90px;
+	text-align: center;
+	color: black;
+	font-weight: 700;
+}
+
+/* --- Credits --- */
+
+.credit-rect {
+	opacity: 0;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 80px);
+	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 80px);
+	background: linear-gradient(to top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 80px);
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=0 );*/
+}
+
+@media only screen and (max-width: 400px) {
+	#credit {
+		font-size: 10px !important;
+	}
+}
+#credit {
+	position: absolute;
+	bottom: 15px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 12px;
+}
+
+#credit p {
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+.credit-bold {
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.credit-note {
+	line-height: 140%;
+	font-size: 0.8em;
+	font-weight: 400;
+}
